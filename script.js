@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (index >= TOTAL) index = 0;
 
     current = index;
-    track.style.transform = `translateX(${current * 100}%)`;
+    track.style.transform = `translateX(-${current * 100}%)`;
 
     dots.forEach((d, i) => d.classList.toggle('active', i === current));
     slides.forEach((s, i) => s.classList.toggle('active', i === current));

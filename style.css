@@ -426,6 +426,7 @@ a  { text-decoration: none; color: inherit; }
 .carousel-track {
   display: flex;
   transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  direction: ltr;
 }
 
 .carousel-slide {
@@ -447,6 +448,7 @@ a  { text-decoration: none; color: inherit; }
   background: linear-gradient(to top, rgba(13,7,0,0.95) 0%, rgba(13,7,0,0.6) 60%, transparent 100%);
   padding: 60px 40px 36px;
   text-align: center;
+  direction: rtl;
 }
 
 .carousel-caption h3 {
