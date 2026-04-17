@@ -26,7 +26,35 @@
 }
 
 /* ---------- Reset & Base ---------- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-text-fill-color: inherit;
+}
+
+/* Force all browsers to keep our exact colors in dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gold:        #c9922a;
+    --gold-light:  #e8b84b;
+    --gold-glow:   rgba(201, 146, 42, 0.35);
+    --dark:        #0d0700;
+    --dark-2:      #1a0e00;
+    --dark-3:      #2b1a00;
+    --dark-card:   #1e1100;
+    --cream:       #fff8f0;
+    --cream-2:     #fdf3e3;
+    --text-main:   #f5e6cc;
+    --text-muted:  #b8956a;
+    --border:      rgba(201, 146, 42, 0.2);
+    color-scheme:  only light;
+  }
+  html, body, body * {
+    forced-color-adjust: none;
+    -webkit-forced-color-adjust: none;
+  }
+}
 
 html {
   scroll-behavior: smooth;
