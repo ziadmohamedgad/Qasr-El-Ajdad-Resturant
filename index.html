@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="قصر الأجداد – تذوّق أصالة المائدة العربية من أشهى المندي والمضبي والمشويات المميزة. اطلب الآن عبر هنقرستيشن وجاهز وكيتا." />
+  <title>قصر الأجداد</title>
+
+  <!-- Google Fonts: Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo-wrap">
+        <img src="Images/logo.png" alt="شعار قصر الأجداد" id="logo-img" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'" />
+        <span id="logo-text" class="logo-text" style="display:none;">قصر الأجداد</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">من نحن</a>
+        <a href="#meals" class="nav-link">قائمة الطعام</a>
+        <a href="#order" class="nav-link">اطلب الآن</a>
+        <a href="#location" class="nav-link">موقعنا</a>
+        <a href="#contact" class="nav-link cta-nav">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="Images/logo.png" alt="شعار قصر الأجداد" class="hero-logo" onerror="this.style.display='none'" />
+      </div>
+      <p class="hero-tagline">حيث تلتقي الأصالة بفن الطعام</p>
+      <h1 class="hero-title">قصر&nbsp;الأجداد</h1>
+      <p class="hero-sub">مطعم الأسرة الأول في أشهى المندي والمضبي والمأكولات الشعبية</p>
+      <div class="hero-btns">
+        <a href="#meals" class="btn btn-gold">استعرض القائمة</a>
+        <a href="#order" class="btn btn-outline">اطلب الآن</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-badge">من نحن</div>
+      <h2 class="section-title">حكاية الأصالة<br /><span class="gold">منذ الأزل</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            في قصر الأجداد، نؤمن بأن الطعام ليس مجرد وجبة، بل هو تجربة تجمع الأسرة وتروي حكايات الأجداد.
+            تأسّسنا على موروث عريق من الوصفات العربية الأصيلة، يتوارثها الأبناء عن الآباء جيلاً بعد جيل.
+          </p>
+          <p>
+            نقدّم لكم أشهى المندي بنكهته الدخانية الأصيلة، والمضبي الطري المذهل، والمأكولات الشعبية،
+            كلها محضّرة بأعلى جودة من المكونات الطازجة وتوابل الشرق المختارة.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">٥٠٠+</span>
+              <span class="stat-label">عميل سعيد يومياً</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">٧+</span>
+              <span class="stat-label">أطباق مميزة</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">١٠٠٪</span>
+              <span class="stat-label">مكونات طازجة</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-img-card">
+            <img src="Images/meals/لحم مندي.jpg" alt="لحم مندي" />
+            <div class="about-img-label">لحم مندي</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MEALS CAROUSEL ==================== -->
+  <section id="meals">
+    <div class="section-container">
+      <div class="section-badge">قائمة الطعام</div>
+      <h2 class="section-title">أشهى <span class="gold">الأطباق</span></h2>
+      <p class="section-sub">اكتشف تشكيلتنا المميزة من أفخر الأطباق العربية</p>
+
+      <div class="carousel-wrapper" id="carousel">
+        <!-- Slides -->
+        <div class="carousel-track" id="carousel-track">
+
+          <div class="carousel-slide active">
+            <img src="Images/meals/لحم مندي.jpg" alt="لحم مندي" />
+            <div class="carousel-caption">
+              <h3>لحم مندي</h3>
+              <p>لحم طري مطهو ببهارات اليمن الأصيلة</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="Images/meals/دجاج مندي.jpg" alt="دجاج مندي" />
+            <div class="carousel-caption">
+              <h3>دجاج مندي</h3>
+              <p>دجاج مدخّن بنكهة المندي الدخانية الشهيرة</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="Images/meals/دجاج مضبي.jpg" alt="دجاج مضبي" />
+            <div class="carousel-caption">
+              <h3>دجاج مضبي</h3>
+              <p>دجاج مطهو على حجر المضبي بتوابل تقليدية حتى النضج التام</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="Images/meals/دجاج شواية.jpg" alt="دجاج شواية" />
+            <div class="carousel-caption">
+              <h3>دجاج شواية</h3>
+              <p>دجاج مشوّى بعناية بالتوابل السرية</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="Images/meals/دجاج مضغوط.jpg" alt="دجاج مضغوط" />
+            <div class="carousel-caption">
+              <h3>دجاج مضغوط</h3>
+              <p>دجاج مطهو بالضغط ليحتفظ بكل عصارته ونكهته الرائعة</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="Images/meals/برمة.jpg" alt="برمة" />
+            <div class="carousel-caption">
+              <h3>برمة</h3>
+              <p>طبق تقليدي أصيل بلحم هش وأرز عطري لا يُقاوَم</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="Images/meals/حاشي مكموت.jpg" alt="حاشي مكموت" />
+            <div class="carousel-caption">
+              <h3>حاشي مكموت</h3>
+              <p>طبق الحاشي الشهير المطهو بطريقة المكموت التراثية</p>
+            </div>
+          </div>
+
+        </div><!-- end track -->
+
+        <!-- Controls -->
+        <button class="carousel-btn prev" id="carousel-prev" aria-label="السابق">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="carousel-btn next" id="carousel-next" aria-label="التالي">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ORDER ==================== -->
+  <section id="order">
+    <div class="section-container">
+      <div class="section-badge">اطلب الآن</div>
+      <h2 class="section-title">متوفّرون على <span class="gold">منصاتك المفضّلة</span></h2>
+      <p class="section-sub">امسح رمز QR أو اضغط على الزر للطلب مباشرة</p>
+
+      <div class="order-cards">
+
+        <!-- Jahez -->
+        <div class="order-card">
+          <div class="order-card-top">
+            <div class="platform-icon jz">
+              <img src="Images/logos/jahez.png" alt="جاهز" class="platform-logo" />
+            </div>
+            <h3 class="platform-name">جاهز</h3>
+          </div>
+          <div class="qr-wrap">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fjahez.link%2Fb88mRUHtp2b&color=1a0a00&bgcolor=fff8f0"
+              alt="QR جاهز"
+              loading="lazy"
+            />
+          </div>
+          <a href="https://jahez.link/b88mRUHtp2b" target="_blank" rel="noopener" class="btn btn-gold order-btn">
+            اطلب عبر جاهز
+          </a>
+        </div>
+
+        <!-- HungerStation (الأكثر طلباً) -->
+        <div class="order-card featured">
+          <div class="featured-badge">الأكثر طلباً</div>
+          <div class="order-card-top">
+            <div class="platform-icon hs">
+              <img src="Images/logos/hungerstation.png" alt="هنقرستيشن" class="platform-logo" />
+            </div>
+            <h3 class="platform-name">هنقرستيشن</h3>
+          </div>
+          <div class="qr-wrap">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fhungerstation.go.link%2F%3Fc%3DSA%26s%3Dc%26v%3D54128%26so%3Dmls%26adj_t%3D1sdhhuza_1spi9ypp%26adj_og_title%3D%25D9%2582%25D8%25B5%25D8%25B1%2B%25D8%25A7%25D9%2584%25D8%25A3%25D8%25AC%25D8%25AF%25D8%25A7%25D8%25AF%26adj_og_image%3Dhttps%3A%2F%2Fimages.deliveryhero.io%2Fimage%2Fhungerstation%2Frestaurant%2Flogo_ar%2F1e02e6a31d34360150aa06b4689acdf5.jpg&color=1a0a00&bgcolor=fff8f0"
+              alt="QR هنقرستيشن"
+              loading="lazy"
+            />
+          </div>
+          <a href="https://hungerstation.go.link/?c=SA&s=c&v=54128&so=mls&adj_t=1sdhhuza_1spi9ypp&adj_og_title=%D9%82%D8%B5%D8%B1+%D8%A7%D9%84%D8%A3%D8%AC%D8%AF%D8%A7%D8%AF&adj_og_image=https://images.deliveryhero.io/image/hungerstation/restaurant/logo_ar/1e02e6a31d34360150aa06b4689acdf5.jpg"
+             target="_blank" rel="noopener" class="btn btn-gold order-btn">
+            اطلب عبر هنقرستيشن
+          </a>
+        </div>
+
+        <!-- Keeta -->
+        <div class="order-card">
+          <div class="order-card-top">
+            <div class="platform-icon kt">
+              <img src="Images/logos/keeta.png" alt="كيتا" class="platform-logo" />
+            </div>
+            <h3 class="platform-name">كيتا</h3>
+          </div>
+          <div class="qr-wrap">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Furl.mykeeta.com%2FPVcwfEoz&color=1a0a00&bgcolor=fff8f0"
+              alt="QR كيتا"
+              loading="lazy"
+            />
+          </div>
+          <a href="https://url.mykeeta.com/PVcwfEoz" target="_blank" rel="noopener" class="btn btn-gold order-btn">
+            اطلب عبر كيتا
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATION ==================== -->
+  <section id="location">
+    <div class="section-container">
+      <div class="section-badge">موقعنا</div>
+      <h2 class="section-title">تعال <span class="gold">زُرنا</span></h2>
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>العنوان</h4>
+              <p>شارع الإمام الشافعي - حي السلام - الرياض - المملكة العربية السعودية</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>أوقات العمل</h4>
+              <p>يومياً من ١٢:٠٠ ظهراً حتى ١٢:٠٠ منتصف الليل</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>اتصل بنا</h4>
+              <p><a href="tel:+966537878778" dir="ltr">+966 53 787 8778</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>ستجدنا على خرائط Google</p>
+          <a href="https://maps.app.goo.gl/qUxGdXqWgb2sXGiC9" target="_blank" class="btn btn-outline">افتح الخريطة</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT / CALL US ==================== -->
+  <section id="contact">
+    <div class="section-container contact-inner">
+      <div class="section-badge">تواصل معنا</div>
+      <h2 class="section-title">نحن هنا <span class="gold">من أجلك</span></h2>
+      <p class="section-sub">تواصل معنا الآن لأي استفسار أو حجز</p>
+      <div class="contact-cards">
+        <a href="tel:+966537878778" class="contact-card" id="call-btn">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>اتصل بنا الآن</span>
+          <small dir="ltr">+966 53 787 8778</small>
+        </a>
+        <a href="https://wa.me/966537878778" target="_blank" rel="noopener" class="contact-card whatsapp" id="whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>واتساب</span>
+          <small>دردش معنا مباشرة</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-brand">قصر الأجداد</p>
+      <p class="footer-copy">© ٢٠٢٦ جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="back-top" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
