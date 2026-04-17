@@ -22,6 +22,7 @@
   --radius-sm:   8px;
   --transition:  0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --font:        'Tajawal', sans-serif;
+  color-scheme:  only light;
 }
 
 /* ---------- Reset & Base ---------- */
