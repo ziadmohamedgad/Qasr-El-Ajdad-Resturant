@@ -575,6 +575,7 @@ a  { text-decoration: none; color: inherit; }
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  transform: scale(1) translateY(0);
 }
 .order-card::before {
   content: '';
@@ -583,8 +584,9 @@ a  { text-decoration: none; color: inherit; }
   background: radial-gradient(ellipse at top, rgba(201,146,42,0.06), transparent 70%);
   pointer-events: none;
 }
-.order-card:hover {
-  transform: translateY(-8px) scale(1.04);
+.order-card:hover,
+.order-card.visible:hover {
+  transform: scale(1.07) translateY(-8px);
   border-color: var(--gold);
   box-shadow: 0 16px 48px var(--gold-glow);
 }
@@ -863,8 +865,10 @@ footer {
   }
 
   .order-card.featured { transform: none; }
-  .order-card:hover { transform: translateY(-8px) scale(1.04); }
-  .order-card.featured:hover { transform: translateY(-8px) scale(1.04); }
+  .order-card:hover,
+  .order-card.visible:hover { transform: scale(1.05) translateY(-8px); }
+  .order-card.featured:hover,
+  .order-card.featured.visible:hover { transform: scale(1.05) translateY(-8px); }
 
   .carousel-slide img { height: 380px; }
 }
